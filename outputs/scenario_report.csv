@@ -1,0 +1,7 @@
+scenario,cases,blocks,reviews,mean_severity,mean_score,top_evidence_id,recommended_action
+associates policy boundary,24,2,3,1.708,0.2726,ev_0099,block release until replay is understood
+proposition failure replay,24,2,4,3.333,0.5307,ev_0044,block release until replay is understood
+value gap,24,3,2,3.333,0.5112,ev_0077,block release until replay is understood
+value reviewer handoff,24,2,4,2.583,0.4257,ev_0055,block release until replay is understood
+zarna drift,24,2,3,2.5,0.3988,ev_0022,block release until replay is understood
+zarna evidence recall,24,3,3,1.875,0.2985,ev_0066,block release until replay is understood
