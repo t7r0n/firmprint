@@ -1,0 +1,65 @@
+{
+  "repo": "firmprint",
+  "company": "Zarna",
+  "rubric_axes": [
+    {
+      "axis": "zarna_coverage",
+      "failures": [
+        "zarna_drift"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "value_risk",
+      "failures": [
+        "value_gap"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "proposition_precision",
+      "failures": [
+        "proposition_misroute"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "associates_latency",
+      "failures": [
+        "associates_blindspot"
+      ],
+      "evidence_required": true
+    }
+  ],
+  "archetypes": [
+    {
+      "name": "zarna evidence replay",
+      "trigger": "zarna signal changes while value context is stale",
+      "expected": "block release until cited evidence is regenerated"
+    },
+    {
+      "name": "value boundary probe",
+      "trigger": "value handoff crosses a policy or trust boundary",
+      "expected": "route to reviewer with evidence packet"
+    },
+    {
+      "name": "proposition regression harness",
+      "trigger": "proposition behavior regresses against the last accepted fixture",
+      "expected": "open a regression issue with trace and benchmark delta"
+    },
+    {
+      "name": "associates operator packet",
+      "trigger": "associates output needs a human-readable audit packet",
+      "expected": "accept only if decision claims cite fixture evidence"
+    }
+  ],
+  "sources_used": [
+    "https://www.ycombinator.com/companies/zarna",
+    "https://www.linkedin.com/posts/rishabh-dhariwal_grateful-to-share-that-zarna-yc-f25-is-activity-7376677228031455232-v64j",
+    "https://www.zarnaai.com/team/rishabh",
+    "https://www.crunchbase.com/person/vivan-agrawal",
+    "https://www.crunchbase.com/person/rakesh-mehta-bd61",
+    "https://www.crunchbase.com/organization/zarna",
+    "https://www.alternates.ai/finance-and-operations/agent/zarna"
+  ]
+}
