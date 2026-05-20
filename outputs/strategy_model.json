@@ -1,0 +1,69 @@
+{
+  "company": "Zarna",
+  "repo": "firmprint",
+  "terms": [
+    "zarna",
+    "value",
+    "proposition",
+    "associates",
+    "tuned",
+    "evaluation",
+    "methods",
+    "decision"
+  ],
+  "metrics": [
+    "zarna_coverage",
+    "value_risk",
+    "proposition_precision",
+    "associates_latency"
+  ],
+  "failure_modes": [
+    "zarna_drift",
+    "value_gap",
+    "proposition_misroute",
+    "associates_blindspot"
+  ],
+  "evidence_density": 17.75,
+  "pressure_index": 0.3167,
+  "blocked_share": 0.0972,
+  "review_share": 0.1319,
+  "top_leverage_points": [
+    {
+      "rank": 1,
+      "scenario": "zarna evidence replay",
+      "metric": "zarna_coverage",
+      "failure_mode": "zarna_drift",
+      "evidence": "ev_0000",
+      "operator_action": "block release until cited evidence is regenerated",
+      "severity": 2.611
+    },
+    {
+      "rank": 2,
+      "scenario": "associates operator packet",
+      "metric": "value_risk",
+      "failure_mode": "value_gap",
+      "evidence": "ev_0055",
+      "operator_action": "accept only if decision claims cite fixture evidence",
+      "severity": 2.556
+    },
+    {
+      "rank": 3,
+      "scenario": "proposition regression harness",
+      "metric": "proposition_precision",
+      "failure_mode": "proposition_misroute",
+      "evidence": "ev_0110",
+      "operator_action": "open a regression issue with trace and benchmark delta",
+      "severity": 2.528
+    },
+    {
+      "rank": 4,
+      "scenario": "value boundary probe",
+      "metric": "associates_latency",
+      "failure_mode": "associates_blindspot",
+      "evidence": "ev_0033",
+      "operator_action": "route to reviewer with evidence packet",
+      "severity": 2.528
+    }
+  ],
+  "readout": "Zarna gets a local, deterministic pressure test around zarna, value, and proposition. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action."
+}
