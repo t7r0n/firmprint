@@ -1,22 +1,22 @@
 # Firmprint
 
-An open source tool that ingests a fund's historical memo and deal-review corpus and emits a machine readable "firm profile" - screening criteria, IC memo style guide, decision bias matrix - that drops directly into Zarna's Analyst and Memo agents as a system prompt + few shot bundle.
+An open source tool that ingests a fund's historical memo and deal-review corpus and emits a machine readable "firm profile" — screening criteria, IC memo style guide, decision bias matrix — that drops directly into Zarna's Analyst and Memo agents as a system prompt + few shot bundle.
 
 ![Firmprint working dashboard](outputs/project_working.svg)
 
 ## Why it exists
 
-Zarna's value proposition is "AI associates tuned to your firm's evaluation methods, decision making patterns, and institutional knowledge" (zarnaai.com).
+Zarna's value proposition is "AI associates tuned to your firm's evaluation methods, decision making patterns, and institutional knowledge" (zarnaai.com). Their go to market is forward deployed engineering — embedding with a fund for weeks to elicit the firm's screening rubric, IC template, and CRM taxonomy, then encoding that into the four associates..
 
-Most internal demos stop at a pretty chart. This repository is built around the harder part: a repeatable path from fixture, to failure, to evidence, to the operator action a serious team would actually trust.
+The project is intentionally built as a local replay harness instead of a slide. It creates fixtures, plants realistic failure modes, produces citation-locked evidence, and turns the result into a dashboard a reviewer can inspect without credentials or hosted services.
 
 ## What is inside
 
-- A deterministic replay harness tuned around zarna, value, and proposition.
-- Company-specific strategy code in `src/firmprint/strategy.py`, not just README-level customization.
-- Citation-locked reports where every decision claim has to point back to a generated evidence ID.
-- Two visual artifacts generated from the latest run: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
-- A portable demo pack with JSON, CSV, Markdown, HTML, SVG, and benchmark artifacts.
+- Deterministic fixture generation for the company-specific risk surface.
+- Strategy code in `src/firmprint/strategy.py` with project-specific scoring and visual evidence.
+- Citation-locked reports where every decision claim points to a generated evidence ID.
+- Two regenerated visual artifacts: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
+- A portable demo pack with JSON, CSV, Markdown, HTML, SVG, benchmark, and test artifacts.
 
 ![Firmprint evidence map](outputs/evidence_map.svg)
 
