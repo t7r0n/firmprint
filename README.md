@@ -1,12 +1,12 @@
 # Firmprint
 
-An open source tool that ingests a fund's historical memo and deal-review corpus and emits a machine readable "firm profile" — screening criteria, IC memo style guide, decision bias matrix — that drops directly into Zarna's Analyst and Memo agents as a system prompt + few shot bundle.
+An open source tool that ingests a fund's historical memo and deal-review corpus and emits a machine readable "firm profile" — screening criteria, IC memo style guide, decision bias matrix — that drops directly into Firmprint's Analyst and Memo agents as a system prompt + few shot bundle.
 
 ![Firmprint working dashboard](outputs/project_working.svg)
 
 ## Why it exists
 
-Zarna's value proposition is "AI associates tuned to your firm's evaluation methods, decision making patterns, and institutional knowledge" (zarnaai.com). Their go to market is forward deployed engineering — embedding with a fund for weeks to elicit the firm's screening rubric, IC template, and CRM taxonomy, then encoding that into the four associates..
+Firmprint's value proposition is "AI associates tuned to your firm's evaluation methods, decision making patterns, and institutional knowledge" (Firmprintai.com). Their go to market is forward deployed engineering — embedding with a fund for weeks to elicit the firm's screening rubric, IC template, and CRM taxonomy, then encoding that into the four associates..
 
 The project is intentionally built as a local replay harness instead of a slide. It creates fixtures, plants realistic failure modes, produces citation-locked evidence, and turns the result into a dashboard a reviewer can inspect without credentials or hosted services.
 
@@ -22,14 +22,14 @@ The project is intentionally built as a local replay harness instead of a slide.
 
 ## Signals it measures
 
-- `zarna coverage`
+- `Firmprint coverage`
 - `value risk`
 - `proposition precision`
 - `associates latency`
 
 ## Failure modes it plants
 
-- zarna drift
+- Firmprint drift
 - value gap
 - proposition misroute
 - associates blindspot
@@ -52,16 +52,6 @@ uv run ruff check .
 - `outputs/decision_report.md`
 - `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
-
-## Sources
-
-- https://www.ycombinator.com/companies/zarna
-- https://www.linkedin.com/posts/rishabh-dhariwal_grateful-to-share-that-zarna-yc-f25-is-activity-7376677228031455232-v64j
-- https://www.zarnaai.com/team/rishabh
-- https://www.crunchbase.com/person/vivan-agrawal
-- https://www.crunchbase.com/person/rakesh-mehta-bd61
-- https://www.crunchbase.com/organization/zarna
-- https://www.alternates.ai/finance-and-operations/agent/zarna
 
 ## Boundary
 

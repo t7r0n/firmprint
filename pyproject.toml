@@ -1,7 +1,7 @@
 [project]
 name = "firmprint"
 version = "0.1.0"
-description = "An open source tool that ingests a fund's historical memo and deal-review corpus and emits a machine readable \"firm profile\" - screening cri"
+description = "An open source tool that ingests a fund's historical memo and deal-review corpus and emits a machine readable 'firm prof"
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [
